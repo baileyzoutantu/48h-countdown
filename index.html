@@ -34,12 +34,11 @@ body{
 }
 /* 小妖怪底图水印层 */
 .mascot-layer{
-  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.35;
+  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.4;
   background-image:url("assets/kv.png");
   background-repeat:no-repeat;
   background-position:85% 85%;
   background-size:min(60vw,700px);
-  filter:brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(45deg);
   -webkit-mask-image:linear-gradient(135deg, transparent 5%, black 30%, transparent 75%);
   mask-image:linear-gradient(135deg, transparent 5%, black 30%, transparent 75%);
 }
@@ -248,7 +247,6 @@ body::after{
       <span>主办 · 悟空智画 OPC 社区</span>
       <span>云游 OPC 社区</span>
       <span>地点 · 连云港</span>
-      <span>48H · 创作冲刺</span>
     </div>
   </footer>
 </div>

@@ -25,22 +25,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg-deep);color
   -webkit-font-smoothing:antialiased}
 body{
   background-image:
-    radial-gradient(1200px 700px at 20% -10%, rgba(216,255,77,.12), transparent 55%),
-    radial-gradient(900px 600px at 90% 110%, rgba(255,120,80,.08), transparent 60%),
-    radial-gradient(800px 500px at 50% 50%, rgba(216,255,77,.03), transparent 70%),
-    url("assets/bg.jpg");
+    radial-gradient(1200px 700px at 20% -10%, rgba(216,255,77,.08), transparent 55%),
+    radial-gradient(900px 600px at 90% 110%, rgba(255,120,80,.05), transparent 60%),
+    linear-gradient(rgba(4,35,31,.55), rgba(4,35,31,.55)),
+    url("assets/kv.png");
   background-size:cover;background-position:center;
   position:relative;
-}
-/* 小妖怪底图水印层 */
-.mascot-layer{
-  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.4;
-  background-image:url("assets/kv.png");
-  background-repeat:no-repeat;
-  background-position:85% 85%;
-  background-size:min(60vw,700px);
-  -webkit-mask-image:linear-gradient(135deg, transparent 5%, black 30%, transparent 75%);
-  mask-image:linear-gradient(135deg, transparent 5%, black 30%, transparent 75%);
 }
 body::before{
   content:"";position:absolute;inset:0;
